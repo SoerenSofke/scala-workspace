@@ -6,13 +6,13 @@ def factorial(n: Int): Int =
   if n <= 1 then 1
   else n * factorial(n - 1)
 
-//> using dep "com.lihaoyi::utest:0.8.5"
-import utest._        
+
+import utest._
 
 private val helperTests = Tests:
   test("factorial"):
     val f = factorial(6)
-    assert(f == 721)
+    f ==> 720
 
 // Running test suite
 @main
