@@ -1,5 +1,5 @@
 @main 
-def hello() : Unit = 
+def main() : Unit = 
     print("\u001bc")
 
     while (true)
@@ -9,7 +9,7 @@ def hello() : Unit =
         println("█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀")
         println("█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀█▄▀")
         println(helpers.factorial(6))
-               
+              
         Thread.sleep(200)
 
         print("\u001B[H")
