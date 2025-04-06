@@ -8,5 +8,6 @@
       ]
     }
   },
-  "postCreateCommand": "curl -fL https://github.com/Virtuslab/scala-cli/releases/latest/download/scala-cli-x86_64-pc-linux.gz | gzip -d > scala-cli && chmod +x scala-cli && sudo mv scala-cli /usr/local/bin/scala-cli"
+  "postCreateCommand": "curl -fL https://github.com/Virtuslab/scala-cli/releases/latest/download/scala-cli-x86_64-pc-linux.gz | gzip -d > scala-cli && chmod +x scala-cli && sudo mv scala-cli /usr/local/bin/scala-cli",
+  "postStartCommand": "scala-cli compile ."
 }
